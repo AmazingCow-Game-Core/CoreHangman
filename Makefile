@@ -50,7 +50,7 @@ clean:
 #Create the object files for Core.
 obj:
 	mkdir -p ./obj
-	g++ -std=c++11  ./src/*.cpp
+	g++ -std=c++11 -c ./src/*.cpp
 
 	mv *.o ./obj/
 
