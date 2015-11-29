@@ -55,8 +55,8 @@ void usage()
 {
     cout << "Amazing Cow - HangmanCore Test Game" << endl;
     cout << "Usage:" << endl;
-    cout << "  <binary-name> <path-of-game-board>" << endl;
-    cout << "Ex: ./testgame ./test_game/game.txt" << endl;
+    cout << "  <binary-name> word_to_discovery" << endl;
+    cout << "Ex: ./testgame \"Amazing Cow\"" << endl;
 
     exit(1);
 }
