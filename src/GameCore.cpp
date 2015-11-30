@@ -4,7 +4,7 @@
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
 //            █ █        █ █        GameCore.cpp                              //
-//             ████████████         Hangman Core                              //
+//             ████████████         CoreHangman                               //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -48,7 +48,7 @@
 #include <iterator>
 
 //Usings.
-USING_NS_HANGMANCORE;
+USING_NS_COREHANGMAN;
 
 // Constants //
 const int GameCore::kUnlimitedMoves = -1;

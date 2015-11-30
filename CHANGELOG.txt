@@ -1,12 +1,9 @@
 v0.1.0 - Initial version.
 
-v0.2.0: [November 17 2015]
-- Add doxygen comments.
-- Changed the CoordVec to inside of Coord.
-- Changed the Board to inside of Light.
-- Upgraded the README.
 
-v0.3.0: [November 23 2015]
-- Move to CoreCoord (Same stuff of old Coord class but in a separated lib).
-- Create a Makefile to ease the build of Core.
-- Create Test game code.
+v0.2.0 - [Nov 30 2015]
+    - Change the name of project from HangmanCore to CoreHangman,
+      to follow the convetion of the other AmazingCow games.
+    - Fix the CHANGELOG.
+    - Fix the README.
+

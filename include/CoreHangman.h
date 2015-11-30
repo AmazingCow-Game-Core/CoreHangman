@@ -3,8 +3,8 @@
 //               ████████                                                     //
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
-//            █ █        █ █        HangmanCore_Utils.h                       //
-//             ████████████         Hangman Core                              //
+//            █ █        █ █        CoreHangman.h                             //
+//             ████████████         CoreHangman                               //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -39,23 +39,16 @@
 //                                  Enjoy :)                                  //
 //----------------------------------------------------------------------------//
 
-#ifndef __HangmanCore_include_HangmanCore_Utils_h__
-#define __HangmanCore_include_HangmanCore_Utils_h__
+#ifndef __CoreHangman_include_CoreHangman_h__
+#define __CoreHangman_include_CoreHangman_h__
 
-//All classes of this core is placed inside this namespace.
-//We use MACROS so is easier to change if needed.
-//Is (in our opinion) more explicit.
-//And finally the editors will not reformat the code.
+//This is a umbrella header indented to ease the inclusion of all files
+//needed to use the Hangman Game Core.
+//While is possible to include each one separately is very easy just to include
+//this file alone and let it makes all the job. :)
 
-#define NS_HANGMANCORE_BEGIN namespace HangmanCore {
-#define NS_HANGMANCORE_END   }
-#define USING_NS_HANGMANCORE using namespace HangmanCore
+#include "CoreHangman_Utils.h"
+#include "Status.h"
+#include "GameCore.h"
 
-//The core version number.
-#define COW_HANGMANCORE_VERSION_MAJOR    "0"
-#define COW_HANGMANCORE_VERSION_MINOR    "1"
-#define COW_HANGMANCORE_VERSION_REVISION "0"
-
-#define COW_HANGMANCORE_VERSION "0.1.0"
-
-#endif // defined(__HangmanCore_include_HangmanCore_Utils_h__) //
+#endif // defined(__CoreHangman_include_CoreHangman_h__) //

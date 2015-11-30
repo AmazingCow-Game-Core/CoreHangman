@@ -4,7 +4,7 @@
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
 //            █ █        █ █        Status.h                                  //
-//             ████████████         Hangman Core                              //
+//             ████████████         CoreHangman                               //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -39,16 +39,16 @@
 //                                  Enjoy :)                                  //
 //----------------------------------------------------------------------------//
 
-#ifndef __HangmanCore_include_Status_h__
-#define __HangmanCore_include_Status_h__
+#ifndef __CoreHangman_include_Status_h__
+#define __CoreHangman_include_Status_h__
 
 //std
 #include <vector>
 #include <ostream>
-//HangmanCore.
-#include "HangmanCore_Utils.h"
+//CoreHangman.
+#include "CoreHangman_Utils.h"
 
-NS_HANGMANCORE_BEGIN
+NS_COREHANGMAN_BEGIN
 
 ///@brief Defines the possible states of Game Core.
 ///@see GameCore.
@@ -63,5 +63,5 @@ enum class Status
 ///@see Status.
 std::ostream& operator <<(std::ostream &os, Status status);
 
-NS_HANGMANCORE_END
-#endif // defined(__HangmanCore_include_Status_h__) //
+NS_COREHANGMAN_END
+#endif // defined(__CoreHangman_include_Status_h__) //

@@ -3,8 +3,8 @@
 //               ████████                                                     //
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
-//            █ █        █ █        HangmanCore.h                             //
-//             ████████████         Hangman Core                              //
+//            █ █        █ █        CoreHangman_Utils.h                       //
+//             ████████████         CoreHangman                               //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -39,16 +39,23 @@
 //                                  Enjoy :)                                  //
 //----------------------------------------------------------------------------//
 
-#ifndef __HangmanCore_include_HangmanCore_h__
-#define __HangmanCore_include_HangmanCore_h__
+#ifndef __CoreHangman_include_CoreHangman_Utils_h__
+#define __CoreHangman_include_CoreHangman_Utils_h__
 
-//This is a umbrella header indented to ease the inclusion of all files
-//needed to use the Hangman Game Core.
-//While is possible to include each one separately is very easy just to include
-//this file alone and let it makes all the job. :)
+//All classes of this core is placed inside this namespace.
+//We use MACROS so is easier to change if needed.
+//Is (in our opinion) more explicit.
+//And finally the editors will not reformat the code.
 
-#include "HangmanCore_Utils.h"
-#include "Status.h"
-#include "GameCore.h"
+#define NS_COREHANGMAN_BEGIN namespace CoreHangman {
+#define NS_COREHANGMAN_END   }
+#define USING_NS_COREHANGMAN using namespace CoreHangman
 
-#endif // defined(__HangmanCore_include_HangmanCore_h__) //
+//The core version number.
+#define COW_COREHANGMAN_VERSION_MAJOR    "0"
+#define COW_COREHANGMAN_VERSION_MINOR    "2"
+#define COW_COREHANGMAN_VERSION_REVISION "0"
+
+#define COW_COREHANGMAN_VERSION "0.2.0"
+
+#endif // defined(__CoreHangman_include_CoreHangman_Utils_h__) //

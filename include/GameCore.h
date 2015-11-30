@@ -4,7 +4,7 @@
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
 //            █ █        █ █        GameCore.h                                //
-//             ████████████         Hangman Core                              //
+//             ████████████         CoreHangman                               //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -39,16 +39,16 @@
 //                                  Enjoy :)                                  //
 //----------------------------------------------------------------------------//
 
-#ifndef __HangmanCore_include_GameCore_h__
-#define __HangmanCore_include_GameCore_h__
+#ifndef __CoreHangman_include_GameCore_h__
+#define __CoreHangman_include_GameCore_h__
 
 //std
 #include <string>
-//HangmanCore.
-#include "HangmanCore_Utils.h"
+//CoreHangman
+#include "CoreHangman_Utils.h"
 #include "Status.h"
 
-NS_HANGMANCORE_BEGIN
+NS_COREHANGMAN_BEGIN
 
 class GameCore
 {
@@ -159,5 +159,5 @@ private:
     int m_maxMoves;
 };
 
-NS_HANGMANCORE_END
-#endif // defined(__HangmanCore_include_GameCore_h__) //
+NS_COREHANGMAN_END
+#endif // defined(__CoreHangman_include_GameCore_h__) //

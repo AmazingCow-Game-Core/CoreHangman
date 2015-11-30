@@ -20,9 +20,9 @@ game alone.
 We tried to separated the files in a very organized form.   
 Here is a list of them:
 
+* ```CoreHangman.h```
+* ```CoreHangman_Utils.h```
 * ```GameCore.h```
-* ```HangmanCore.h```
-* ```HangmanCore_Utils.h```
 * ```Status.h```
 
 

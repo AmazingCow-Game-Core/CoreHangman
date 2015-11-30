@@ -4,7 +4,7 @@
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
 //            █ █        █ █        Status.cpp                                //
-//             ████████████         Hangman Core                              //
+//             ████████████         CoreHangman                               //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -43,10 +43,10 @@
 #include "../include/Status.h"
 
 //Usings
-USING_NS_HANGMANCORE;
+USING_NS_COREHANGMAN;
 
 // Enums //
-std::ostream& HangmanCore::operator <<(std::ostream &os, Status status)
+std::ostream& CoreHangman::operator <<(std::ostream &os, Status status)
 {
     os << ((status == Status::Continue) ? "Status::Continue" :
            (status == Status::Defeat  ) ? "Status::Defeat"   :

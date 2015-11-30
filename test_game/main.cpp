@@ -4,7 +4,7 @@
 //             ██        ██                                                   //
 //            ███  █  █  ███                                                  //
 //            █ █        █ █        main.cpp                                  //
-//             ████████████         Hangman Core                              //
+//             ████████████         CoreHangman                               //
 //           █              █       Copyright (c) 2015 AmazingCow             //
 //          █     █    █     █      www.AmazingCow.com                        //
 //          █     █    █     █                                                //
@@ -40,20 +40,20 @@
 //----------------------------------------------------------------------------//
 
 
-//This guard is to ease the usage of the HangmanCore,
+//This guard is to ease the usage of the CoreHangman,
 //so it's users won't need to worry about removing any files
 //since is very unlikely that this flag is defined elsewhere.
-//#ifdef __AMAZINGCORE_HANGMANCORE_TEST_ENABLED__
+#ifdef __AMAZINGCORE_COREHANGMAN_TEST_ENABLED__
 
 #include <iostream>
-#include "../include/HangmanCore.h"
+#include "../include/CoreHangman.h"
 
-USING_NS_HANGMANCORE;
+USING_NS_COREHANGMAN;
 using namespace std;
 
 void usage()
 {
-    cout << "Amazing Cow - HangmanCore Test Game" << endl;
+    cout << "Amazing Cow - CoreHangman Test Game" << endl;
     cout << "Usage:" << endl;
     cout << "  <binary-name> word_to_discovery" << endl;
     cout << "Ex: ./testgame \"Amazing Cow\"" << endl;
@@ -89,4 +89,4 @@ int main(int argc, const char *argv[])
     }
 }
 
-//#endif // __AMAZINGCORE_HANGMANCORE_TEST_ENABLED__ //
+#endif // __AMAZINGCORE_COREHANGMAN_TEST_ENABLED__ //
