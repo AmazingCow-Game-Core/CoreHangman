@@ -54,8 +54,8 @@
 //The core version number.
 #define COW_COREHANGMAN_VERSION_MAJOR    "0"
 #define COW_COREHANGMAN_VERSION_MINOR    "2"
-#define COW_COREHANGMAN_VERSION_REVISION "0"
+#define COW_COREHANGMAN_VERSION_REVISION "1"
 
-#define COW_COREHANGMAN_VERSION "0.2.0"
+#define COW_COREHANGMAN_VERSION "0.2.1"
 
 #endif // defined(__CoreHangman_include_CoreHangman_Utils_h__) //
