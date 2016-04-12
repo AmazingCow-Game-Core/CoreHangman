@@ -1,5 +1,21 @@
-v0.1.0 - Initial version.
+v0.2.3 - [April 11 2016]
+    - Update the README
+        - Add new Sections.
+        - Add info in More info Section.
+        - Add comment separators.
+        - Add cowtodo info in TODO section.
+    - Update the Makefile (Cosmetic changes).
+    - Remove the trailing whitespaces on sources and other cosmetic changes.
+    - Update the CHANGELOG.
+        - Now the newer entries are on top.
+    - Update the version numbers.
 
+v0.2.2 - [Jan 19 2016]
+    - Update the license headers.
+    - Remove the usage section on README.
+
+v0.2.1 - [Nov 30 2015]
+    - Add the doxygen comments.
 
 v0.2.0 - [Nov 30 2015]
     - Change the name of project from HangmanCore to CoreHangman,
@@ -7,10 +23,7 @@ v0.2.0 - [Nov 30 2015]
     - Fix the CHANGELOG.
     - Fix the README.
 
-v0.2.1 - [Nov 30 2015]
-    - Add the doxygen comments.
+-------------------------------------------------------------------------------
+v0.1.0 - Initial version.
 
-v0.2.2 - [Jan 19 2016]
-    - Update the license headers.
-    - Remove the usage section on README.
-    
+
