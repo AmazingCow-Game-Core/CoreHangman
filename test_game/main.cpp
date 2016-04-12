@@ -64,26 +64,28 @@ int main(int argc, const char *argv[])
 {
     if(argc != 2)
         usage();
-    
+
     GameCore core(10);
     core.setWord(argv[1]);
-    
+
     while(core.getStatus() == Status::Continue)
     {
         cout << "Word: " << endl;
         cout << core.getClosedWord() << endl;
-        
+
         cout << "Used letters: " << endl;
         for(auto c : core.getUsedLetters())
             cout << c << " ";
         cout << endl;
-        
-        cout << "Moves: " << core.getMovesCount() << " of " << core.getMaxMovesCount() << endl;
-        
+
+        cout << "Moves: " << core.getMovesCount()
+             << " of "    << core.getMaxMovesCount()
+             << endl;
+
         cout << "Your try: " << endl;
         char c;
         cin >> c;
-        
+
         core.checkLetter(c);
     }
 }

@@ -96,34 +96,34 @@ std::vector<int> GameCore::checkLetter(char letter)
     //Game is already over.
     if(m_status != Status::Continue)
         return std::vector<int>();
-    
+
     //Letter is already used.
     if(!canUseLetter(letter))
         return std::vector<int>();
-    
+
     //Get the current count of opened index, it
     //will be used to check if player hits a letter.
     auto sizeBefore = m_openIndexes.size();
-    
+
     //Add all indexes that match the letter.
     for(int i = 0; i < m_word.size(); ++i)
     {
         if(std::toupper(m_word[i]) == std::toupper(letter))
             m_openIndexes.push_back(i);
     }
-    
+
     //Size is equal, means that player doesn't hit the letter.
     if(sizeBefore == m_openIndexes.size())
         ++m_moves;
-    
+
     //Add the letter to used list.
     m_usedLetters.push_back(std::toupper(letter));
-    
-    
+
+
     //Make the the vectors organized.
     std::sort(std::begin(m_openIndexes), std::end(m_openIndexes));
     std::sort(std::begin(m_usedLetters), std::end(m_usedLetters));
-    
+
     //Check status.
     //Player open all letters. - Victory.
     if(m_openIndexes.size() == m_word.size())
@@ -136,7 +136,7 @@ std::vector<int> GameCore::checkLetter(char letter)
     {
         m_status = Status::Defeat;
     }
-    
+
     return m_openIndexes;
 }
 
@@ -161,13 +161,13 @@ const std::string& GameCore::getOpenWord() const
 std::string GameCore::getClosedWord() const
 {
     std::stringstream ss;
-    
+
     for(int i = 0; i < m_word.size(); ++i)
     {
         auto it = std::find(std::begin(m_openIndexes),
                             std::end  (m_openIndexes),
                             i);
-        
+
         //We have this index - Letter is open.
         if(it != std::end(m_openIndexes))
             ss << m_word[i];
@@ -175,7 +175,7 @@ std::string GameCore::getClosedWord() const
         else
             ss << "*";
     }
-    
+
     return ss.str();
 }
 

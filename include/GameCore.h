@@ -68,11 +68,11 @@ public:
 
     // Public Methods //
 public:
-    ///@brief Set the game word - All other operations will 
+    ///@brief Set the game word - All other operations will
     ///be done against this word. This method must be called
     ///at the begin of each game.
     ///@param word A string with the word that will be played.
-    ///@param reset If true the previous moves count will be 
+    ///@param reset If true the previous moves count will be
     ///reseted, otherwise all moves will be kept.
     ///@see GameCore::getMovesCount, GameCore::getMaxMovesCount,
     ///GameCore::checkLetter.
@@ -80,15 +80,15 @@ public:
 
 
     ///@brief Try a letter against the current word set at
-    ///GameCore::setWord method. If the letter is already 
-    ///used it will return a empty vector and nothing will be 
+    ///GameCore::setWord method. If the letter is already
+    ///used it will return a empty vector and nothing will be
     ///done. If a letter is not used, the letter will be checked
-    ///against the word and all indexes that it appears will be 
-    ///returned. 
+    ///against the word and all indexes that it appears will be
+    ///returned.
     ///The moves count will be incremented only if the letter
     ///is not used and doesn't appears into the word.
     ///@param letter The letter that will be tested.
-    ///@returns A empty vector if a letter is already used 
+    ///@returns A empty vector if a letter is already used
     ///or if it was not found in the word, otherwise returns
     ///a vector with indexes that match the tried letter.
     ///@see GameCore::setWord, GameCore::getUsedLetter.
@@ -99,9 +99,9 @@ public:
     ///@see GameCore::checkLetter, GameCore::canUseLetter.
     const std::vector<char>& getUsedLetters() const;
 
-    ///@brief Check if a given letter can be used or not. 
+    ///@brief Check if a given letter can be used or not.
     ///@param letter Any valid char.
-    ///@returns True if letter can be used i.e. will do anything 
+    ///@returns True if letter can be used i.e. will do anything
     ///into the game or false if it is already used.
     ///@see GameCore::checkLetter, GameCore::getUsedLetters.
     bool canUseLetter(char letter) const;
@@ -122,11 +122,11 @@ public:
 
     ///@brief Gets the letter at the index.
     ///@param index The index of the desired letter.
-    ///@warning index MUST BE VALID. 
+    ///@warning index MUST BE VALID.
     ///@returns The letter.
     const char getLetterAt(int index) const;
 
-    ///@brief Gets all indexes that are spaces in the word. 
+    ///@brief Gets all indexes that are spaces in the word.
     ///@returns The indexes.
     ///@see GameCore::getOpenIndexes.
     const std::vector<int>& getSpaceIndexes() const;
@@ -169,7 +169,7 @@ private:
     std::vector<char> m_usedLetters;
 
     Status m_status;
-    
+
     int m_moves;
     int m_maxMoves;
 };

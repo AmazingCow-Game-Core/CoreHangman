@@ -54,7 +54,7 @@ NS_COREHANGMAN_BEGIN
 enum class Status
 {
     Victory, ///< Game is over     - Player won.
-    Defeat,  ///< Game is over     - Player lose.             
+    Defeat,  ///< Game is over     - Player lose.
     Continue ///< Game is not over - Keep playing.
 };
 
