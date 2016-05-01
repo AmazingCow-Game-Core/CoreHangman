@@ -42,9 +42,9 @@
 #include "../include/GameCore.h"
 
 //std
-#include <sstream>
 #include <algorithm>
 #include <iterator>
+#include <sstream>
 
 //Usings.
 USING_NS_COREHANGMAN;
@@ -132,7 +132,7 @@ std::vector<int> GameCore::checkLetter(char letter)
     }
     //Max moves is enforced and player reach it - Defeat.
     else if(m_maxMoves != GameCore::kUnlimitedMoves &&
-            m_moves > m_maxMoves)
+            m_moves >= m_maxMoves)
     {
         m_status = Status::Defeat;
     }
