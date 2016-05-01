@@ -47,7 +47,7 @@
 //this file alone and let it makes all the job. :)
 
 #include "CoreHangman_Utils.h"
-#include "Status.h"
 #include "GameCore.h"
+#include "Status.h"
 
 #endif // defined(__CoreHangman_include_CoreHangman_h__) //
