@@ -42,8 +42,8 @@
 #define __CoreHangman_include_Status_h__
 
 //std
-#include <vector>
 #include <ostream>
+#include <vector>
 //CoreHangman.
 #include "CoreHangman_Utils.h"
 
