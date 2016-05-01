@@ -1,3 +1,57 @@
+--------------------------------------------------------------------------------
+| Version 0.3.x                                                                |
+--------------------------------------------------------------------------------
+v0.3.0 - [Mai 1, 2016] - 22 years ago... We miss you Ayrton, miss you a lot...
+-- General --
+    - [BUGFIX] Fix a bug on tries count.
+    - Add some documentation.
+    - New README.
+    - Add doxygen stuff.
+
+-- Source --
+    include/CoreHangman.h
+        - Sort the includes.
+
+    include/CoreHangman_Utils.h
+        - Sort the includes.
+        - Update version numbers.
+
+    include/GameCore.h
+        - Improve the documentation.
+
+    include/Status.h
+        - Sort the includes.
+
+    src/GameCore.cpp
+        - [BUGFIX] Fix a bug on tries count.
+          It was count from 0 to max tries (inclusive), but the correct is
+          0 to max tries exclusive, since we start from 0, yielding the
+          max tries cout at end.
+        - Sort the includes.
+
+    Makefile
+        - Fix the bin target
+          Was missing the \ char at end of line.
+
+-- Info Files --
+    README.md
+        - Rewrite the README to consistency with other
+          Amazing Cow's READMEs.
+
+    CHANGELOG.txt
+        - Split the CHANGELOG entry in sections.
+
+    mainpage.dox
+        - Add the mainpage doxygen documentation.
+
+-- Others --
+    Doxyfile
+        - Add the doxygen configuration.
+
+
+--------------------------------------------------------------------------------
+| Version 0.2.x                                                                |
+--------------------------------------------------------------------------------
 v0.2.3 - [April 11 2016]
     - Update the README
         - Add new Sections.
@@ -10,20 +64,25 @@ v0.2.3 - [April 11 2016]
         - Now the newer entries are on top.
     - Update the version numbers.
 
+--------------------------------------------------------------------------------
 v0.2.2 - [Jan 19 2016]
     - Update the license headers.
     - Remove the usage section on README.
 
+--------------------------------------------------------------------------------
 v0.2.1 - [Nov 30 2015]
     - Add the doxygen comments.
 
+--------------------------------------------------------------------------------
 v0.2.0 - [Nov 30 2015]
     - Change the name of project from HangmanCore to CoreHangman,
       to follow the convetion of the other AmazingCow games.
     - Fix the CHANGELOG.
     - Fix the README.
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+| Version 0.1.x                                                                |
+--------------------------------------------------------------------------------
 v0.1.0 - Initial version.
 
 
