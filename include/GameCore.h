@@ -57,109 +57,155 @@ public:
     ///@see GameCore::GameCore
     static const int kUnlimitedMoves;
 
+
     // CTOR/DTOR //
 public:
-    ///@brief Constructs the GameCore.
-    ///@param maxMoves How many tries player has to win the game -
-    ///Default GameCore::kUnlimitedMoves
-    ///@see GameCore::kUnlimitedMoves
+    ///@brief
+    ///     Constructs the GameCore.
+    ///@param maxMoves
+    ///     How many tries player has to win the game -
+    ///     Default GameCore::kUnlimitedMoves
+    ///@see
+    ///     GameCore::kUnlimitedMoves
     GameCore(int maxMoves = kUnlimitedMoves);
 
 
     // Public Methods //
 public:
-    ///@brief Set the game word - All other operations will
-    ///be done against this word. This method must be called
-    ///at the begin of each game.
-    ///@param word A string with the word that will be played.
-    ///@param reset If true the previous moves count will be
-    ///reseted, otherwise all moves will be kept.
-    ///@see GameCore::getMovesCount, GameCore::getMaxMovesCount,
-    ///GameCore::checkLetter.
+    ///@brief
+    ///     Set the game word - All other operations will
+    ///     be done against this word. This method must be called
+    ///     at the begin of each game.
+    ///@param word
+    ///     A string with the word that will be played.
+    ///@param reset
+    ///     If true the previous moves count will be
+    ///     reseted, otherwise all moves will be kept.
+    ///@see
+    ///     GameCore::getMovesCount, GameCore::getMaxMovesCount,
+    ///     GameCore::checkLetter.
     void setWord(const std::string &word, bool reset = true);
 
 
-    ///@brief Try a letter against the current word set at
-    ///GameCore::setWord method. If the letter is already
-    ///used it will return a empty vector and nothing will be
-    ///done. If a letter is not used, the letter will be checked
-    ///against the word and all indexes that it appears will be
-    ///returned.
-    ///The moves count will be incremented only if the letter
-    ///is not used and doesn't appears into the word.
-    ///@param letter The letter that will be tested.
-    ///@returns A empty vector if a letter is already used
-    ///or if it was not found in the word, otherwise returns
-    ///a vector with indexes that match the tried letter.
-    ///@see GameCore::setWord, GameCore::getUsedLetter.
+    ///@brief
+    ///     Try a letter against the current word set at
+    ///     GameCore::setWord method.
+    ///     If the letter is already used it will return a empty
+    ///     vector and nothing will be done.
+    //      If a letter is not used, the letter will be checked
+    ///     against the word and all indexes that it appears will be
+    ///     returned.
+    ///     The moves count will be incremented only if the letter
+    ///     is not used and doesn't appears into the word.
+    ///@param letter
+    ///     The letter that will be tested.
+    ///@returns
+    ///     A empty vector if a letter is already used
+    ///     or if it was not found in the word, otherwise returns
+    ///     a vector with indexes that match the tried letter.
+    /// @see
+    ///     GameCore::setWord, GameCore::getUsedLetter.
     std::vector<int> checkLetter(char letter);
 
-    ///@brief Gets all already tried letters.
-    ///@returns All used letters.
-    ///@see GameCore::checkLetter, GameCore::canUseLetter.
+    ///@brief
+    ///     Gets all already tried letters.
+    ///@returns
+    ///     All used letters.
+    ///@see
+    ///     GameCore::checkLetter, GameCore::canUseLetter.
     const std::vector<char>& getUsedLetters() const;
 
-    ///@brief Check if a given letter can be used or not.
-    ///@param letter Any valid char.
-    ///@returns True if letter can be used i.e. will do anything
-    ///into the game or false if it is already used.
-    ///@see GameCore::checkLetter, GameCore::getUsedLetters.
+    ///@brief
+    ///     Check if a given letter can be used or not.
+    ///@param letter
+    ///     Any valid char.
+    ///@returns
+    ///     True if letter can be used i.e. will do anything
+    ///     into the game or false if it is already used.
+    ///@see
+    ///     GameCore::checkLetter, GameCore::getUsedLetters.
     bool canUseLetter(char letter) const;
 
 
-    ///@brief Gets a the word in plain text.
-    ///@returns A plain word string.
-    ///@see GameCore::getClosedWord.
+    ///@brief
+    ///     Gets a the word in plain text.
+    ///@returns
+    ///     A plain word string.
+    ///@see
+    ///     GameCore::getClosedWord.
     const std::string& getOpenWord() const;
 
-    ///@brief Gets the word with the indexes
-    ///that was not opened it replaced with the '*' char.
-    ///@returns A string with all not opened indexes
-    ///replaced with '*' char.
-    ///@see GameCore::getClosedWord.
+    ///@brief
+    ///     Gets the word with the indexes
+    ///     that was not opened it replaced with the '*' char.
+    ///@returns
+    ///     A string with all not opened indexes
+    ///     replaced with '*' char.
+    ///@see
+    ///     GameCore::getClosedWord.
     std::string getClosedWord() const;
 
 
-    ///@brief Gets the letter at the index.
-    ///@param index The index of the desired letter.
-    ///@warning index MUST BE VALID.
-    ///@returns The letter.
+    ///@brief
+    ///     Gets the letter at the index.
+    ///@param index
+    ///     The index of the desired letter.
+    ///@warning
+    ///    index must be in range of [0, word.size()).
+    ///@returns
+    //      The letter.
     const char getLetterAt(int index) const;
 
-    ///@brief Gets all indexes that are spaces in the word.
-    ///@returns The indexes.
-    ///@see GameCore::getOpenIndexes.
+    ///@brief
+    ///     Gets all indexes that are spaces in the word.
+    ///@returns
+    ///     The indexes.
+    ///@see
+    ///     GameCore::getOpenIndexes.
     const std::vector<int>& getSpaceIndexes() const;
 
-    ///@brief Gets all indexes that are open in the word,
-    ///i.e. player already match the letters.
-    ///@returns The indexes.
-    ///@see GameCore::getSpaceIndexes.
+    ///@brief
+    ///     Gets all indexes that are open in the word,
+    ///     i.e. player already match the letters.
+    ///@returns
+    ///     The indexes.
+    ///@see
+    ///     GameCore::getSpaceIndexes.
     const std::vector<int>& getOpenIndexes() const;
 
     ///@brief Reset the moves count.
     void resetMoves();
 
 
-    ///@brief Get the current status of game.
-    ///@returns the current status of game.
-    ///@see Status, GameCore::getMovesCount,
-    ///GameCore::getMaxMovesCount, GameCore::kUnlimitedMoves.
+    ///@brief
+    ///      Get the current status of game.
+    ///@returns
+    ///      the current status of game.
+    ///@see
+    ///      Status, GameCore::getMovesCount,
+    ///      GameCore::getMaxMovesCount, GameCore::kUnlimitedMoves.
     Status getStatus() const;
 
 
-    ///@brief Get how many moves the player did so far.
-    ///@returns The number of player's moves.
-    ///@see Status, GameCore::getMaxMovesCount,
-    ///GameCore::kUnlimitedMoves.
+    ///@brief
+    ///     Get how many moves the player did so far.
+    ///@returns
+    ///     The number of player's moves.
+    ///@see
+    ///     Status, GameCore::getMaxMovesCount,
+    ///     GameCore::kUnlimitedMoves.
     int getMovesCount() const;
 
-    ///@brief Get how many moves the player can do.
-    ///@returns The number of moves or GameCore::kUnlimitedMoves
-    ///if there is no restriction..
-    ///@see Status, GameCore::getMovesCount,
-    ///GameCore::kUnlimitedMoves
+    ///@brief
+    ///     Get how many moves the player can do.
+    ///@returns
+    ///     The number of moves or GameCore::kUnlimitedMoves
+    ///     if there is no restriction..
+    ///@see
+    ///     Status, GameCore::getMovesCount,
+    ///     GameCore::kUnlimitedMoves
     int getMaxMovesCount() const;
+
 
     // iVars //
 private:
