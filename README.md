@@ -1,53 +1,79 @@
-Core Hangman 
-====
-Made with <3 by [Amazing Cow](http://www.amazingcow.com).
+# CoreHangman
+
+**Made with <3 by [Amazing Cow](http://www.amazingcow.com).**
+
+
 
 <!-- ####################################################################### -->
 <!-- ####################################################################### -->
 
-## Intro:
+## Websites:
+
+* [CoreHangman Website](http://opensource.amazingcow.com/gamecore/corehangman/)
+* [Game Core Website](http://opensource.amazingcow.com/gamecore/) - 
+The Amazing Cow's Game Cores site.
+
+
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+## Description:
 
 This is a Game Core for Hangman Game.   
+
+### Motivation:
+
 You can use it as a "lib" for making Hangman Game in C++ concentrating 
 your efforts in making a cool game interface and letting the logic of the 
 game alone.
 
+<br>
 
+As usual, you are **very welcomed** to **share** and **hack** it.
 
-<!-- ####################################################################### -->
-<!-- ####################################################################### -->
-
-## Files:
-
-We tried to separated the files in a very organized form.   
-Here is a list of them:
-
-* ```CoreHangman.h```
-* ```CoreHangman_Utils.h```
-* ```GameCore.h```
-* ```Status.h```
 
 
 <!-- ####################################################################### -->
 <!-- ####################################################################### -->
 
-## More info:
+## Examples:
 
-We tried to document the Core extensively, so we think that is pretty ease to 
-get what the Core is doing, the API calls and stuff.   
-Anyway if you didn't understand something let us know sending a mail to 
-***help_opensource@amazingcow.com***  with the subject filled with the
+Check out the ```./test_game/main.cpp``` to a peek of how use this lib.
+
+
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+## Documentation:
+
+We strive to make our source code fully documented.   
+While there are a myriad of comments, one might find useful take a look at:
+
+* [Project Website](http://opensource.amazingcow.com/gamecore/corehangman/).
+* [Doxygen Docs](http://opensource.amazingcow.com/gamecore/corehangman/doxygen/).
+* [A list of blog posts about the project](http://opensource.amazingcow.com/gamecore/corehangman/posts/).
+
+Anyway if you didn't understand something let us know sending a mail to  
+[help_opensource@amazingcow.com]() with the subject filled with the
 name of this repo.
 
-We also add a **simple**, **dummy** test game in ```./test_game/main.cpp``` to 
-help the understanding of the Core.
 
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+
+## Dependencies:
+
+There is no dependency for ```CoreHangman```.
 
 
 <!-- ####################################################################### -->
 <!-- ####################################################################### -->
 
 ## License:
+
 This software is released under GPLv3.
 
 
@@ -60,10 +86,10 @@ This software is released under GPLv3.
 Check the TODO file for general things.
 
 This projects uses the COWTODO tags.   
-So install [cowtodo](http://www.github.com/AmazingCow-Tools/COWTODO.html) and run:
+So install [cowtodo](http://www.github.com/AmazingCow-Tools/COWTODO) and run:
 
 ``` bash
-$ cd CoreHangman
+$ cd path/to/the/project
 $ cowtodo 
 ```
 
@@ -75,4 +101,6 @@ That's gonna give you all things to do :D.
 <!-- ####################################################################### -->
 
 ## Others:
-Check our repos and take a look at our [open source site](http://opensource.amazingcow.com).
+
+Check our repos and take a look at our 
+[open source site](http://opensource.amazingcow.com).
