@@ -57,7 +57,7 @@ obj:
 bin:
 	mkdir -p ./bin
 
-	g++ -std=c++11
+	g++ -std=c++11                                 \
 	    -D__AMAZINGCORE_COREHANGMAN_TEST_ENABLED__ \
 	    ./src/*.cpp                                \
 	    ./test_game/main.cpp                       \
