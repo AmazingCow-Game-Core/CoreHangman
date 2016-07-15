@@ -1,6 +1,12 @@
 --------------------------------------------------------------------------------
 | Version 0.3.x                                                                |
 --------------------------------------------------------------------------------
+v0.3.1 - [Jul 15, 2016]
+    - Update the mainpage.dox and README.md to
+      the correct amazing cow links.
+    - Start using the update_version script.
+
+--------------------------------------------------------------------------------
 v0.3.0 - [Mai 1, 2016] - 22 years ago... We miss you Ayrton, miss you a lot...
 -- General --
     - [BUGFIX] Fix a bug on tries count.
